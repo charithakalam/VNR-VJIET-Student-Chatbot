@@ -1,0 +1,152 @@
+{
+  "name": "Vallurupalli Nageswara Rao Vignana Jyothi Institute of Engineering and Technology",
+  "abbreviation": "VNR VJIET",
+  "address": "Vignana Jyothi Nagar, Pragathi Nagar, Nizampet (S.O.), Hyderabad – 500 090, Telangana, India",
+  "email": "postbox@vnrvjiet.ac.in",
+  "phone": ["040-2304 2758", "040-2304 2759", "040-2304 2760"],
+  "website": "https://vnrvjiet.ac.in",
+  "about": "VNR VJIET is a premier autonomous engineering college located in Hyderabad, Telangana. Established in 1995, it is managed by the Vignana Jyothi Educational Society and affiliated with JNTU Hyderabad. It is accredited with NAAC A++ and NBA for multiple programs.",
+  "facilities": [
+    "Wi-Fi enabled campus",
+    "Central Library with digital resources",
+    "Hostels for boys and girls",
+    "Cafeteria and food courts",
+    "Transport with multiple city routes",
+    "Sports complex and gymnasium",
+    "Innovation and incubation centers",
+    "Auditorium and seminar halls"
+  ],
+
+  "hods": {
+    "Mechanical Engineering": {
+      "name": "Dr. B.V.R. Ravi Kumar",
+      "email": "hod_mech@vnrvjiet.in",
+      "phone": "040-2304 2760",
+      "linkedin": "https://www.linkedin.com/in/b-v-r-ravi-kumar-812b77263/"
+    },
+    "Information Technology": {
+      "name": "Dr. N. Mangathayaru",
+      "email": "hod_it@vnrvjiet.in",
+      "phone": "040-2304 2763",
+      "linkedin": "https://www.linkedin.com/in/manga-thayaru-nimala-64227111/"
+    },
+    "Electronics Instrumentation Engineering": {
+      "name": "Dr. S. Pranavaprasad",
+      "email": "hod_eie@vnrvjiet.in",
+      "phone": "",
+      "linkedin": "https://www.linkedin.com/in/dr-pranavanand-satyamurthy-41881373/"
+    },
+    "Electronics & Communication Engineering": {
+      "name": "Dr. L. Padma Sree",
+      "email": "hod_ece@vnrvjiet.in",
+      "phone": "040-2304 2761",
+      "linkedin": "https://www.linkedin.com/in/padmasree-lam-6a848971/"
+    },
+    "Electrical & Electronics Engineering": {
+      "name": "Dr. V. Ramesh Babu",
+      "email": "hod_eee@vnrvjiet.in",
+      "phone": "040-2304 2759",
+      "linkedin": "https://www.linkedin.com/in/ramesh-babu-veligatla-0a8a95113/"
+    },
+    "Artificial Intelligence & Data Science,Cyber Security & Data Science": {
+      "name": "Dr. T. Sunil Kumar",
+      "email": "hod_aids@vnrvjiet.in",
+      "phone": "040-2304 2764",
+      "linkedin": "https://www.linkedin.com/in/sunil-kumar-517a8715/"
+    },
+    "Computer Science & Engineering": {
+      "name": "Dr. V. Baby",
+      "email": "hod_cse@vnrvjiet.in",
+      "phone": "040-2304 2762",
+      "linkedin": "https://www.linkedin.com/in/dr-v-baby-3574725b/"
+    },
+    "Civil Engineering": {
+      "name": "Dr. K. Ramujee",
+      "email": "hod_civil@vnrvjiet.in",
+      "phone": "040-2304 2758",
+      "linkedin": "https://www.linkedin.com/in/dr-kolli-ramujee-1a09a239/"
+    },
+    "Chemistry": {
+      "name": "Dr. C. Jyotsna",
+      "email": "hod_chem@vnrvjiet.in",
+      "phone": "",
+      "linkedin": ""
+    },
+    "CSE-AI&ML & IoT": {
+      "name": "Dr. Sagar Yeruva",
+      "email": "hod_cse_ai@vnrvjiet.in",
+      "phone": "",
+      "linkedin": "https://www.linkedin.com/in/dr-sagar-yeruva-746b8a8b/"
+    },
+    "Automobile Engineering": {
+      "name": "Dr. Shaik Amjad",
+      "email": "hod_auto@vnrvjiet.in",
+      "phone": "",
+      "linkedin": "https://www.linkedin.com/in/amjad-shaik-aa945926/"
+    }
+  },
+
+  "transport": {
+    "routes": [
+      {"route_no": "01", "from": "PATANCHERU", "via": "BHEL", "fare": 26000},
+      {"route_no": "02", "from": "LB NAGAR", "via": "KOTI", "fare": 34000},
+      {"route_no": "2A", "from": "NAGOLE", "via": "BALANAGAR", "fare": 33000},
+      {"route_no": "03", "from": "YUSUFGUDA", "via": "JUBILEE", "fare": 31000},
+      {"route_no": "04", "from": "ECIL", "via": "KOMPALLY", "fare": 33000},
+      {"route_no": "05", "from": "ATTAPUR", "via": "MEHDIPATNAM", "fare": 33000},
+      {"route_no": "06", "from": "ANANDBAGH", "via": "MUSHEERABAD", "fare": 33000},
+      {"route_no": "07", "from": "MOTHINAGAR", "via": "MOOSAPET", "fare": 24000},
+      {"route_no": "08", "from": "OLD ALWAL", "via": "GAJULARAMARAM", "fare": 33000},
+      {"route_no": "09", "from": "KUKATPALLY", "via": "NIZAMPET", "fare": 24000},
+      {"route_no": "10", "from": "MANIKONDA", "via": "NARSINGI", "fare": 28000},
+      {"route_no": "11", "from": "MASJIDBANDA", "via": "NALLAGANDLA", "fare": 28000}
+    ],
+    "note": "Bus fare per academic year ranges between ₹24,000 and ₹34,000 depending on route."
+  },
+
+  "drivers": [
+    {"route_no": "01", "from": "PATANCHERU", "driver_name": "Sudhakar Reddy", "contact": "9542594343"},
+    {"route_no": "02", "from": "LB NAGAR", "driver_name": "Yusuf", "contact": "9121311371"},
+    {"route_no": "2A", "from": "NAGOLE", "driver_name": "Saleem", "contact": "8121091093"},
+    {"route_no": "03", "from": "YUSUFGUDA", "driver_name": "Yasin", "contact": "9963584657"},
+    {"route_no": "04A", "from": "ECIL", "driver_name": "Naresh", "contact": "9948326266"},
+    {"route_no": "04B", "from": "ECIL", "driver_name": "Jangaiah", "contact": "8688711896"},
+    {"route_no": "05", "from": "ATTAPUR", "driver_name": "Shavali", "contact": "9182130642"},
+    {"route_no": "06", "from": "ANANDBAGH", "driver_name": "Manohar", "contact": "8499093228"},
+    {"route_no": "07", "from": "MOTHINAGAR", "driver_name": "Bhanu Murthy", "contact": "9505571999"},
+    {"route_no": "08", "from": "OLD ALWAL", "driver_name": "Srinivas", "contact": "8297638981"},
+    {"route_no": "09", "from": "KUKATPALLY", "driver_name": "Feroz", "contact": "9985936700"},
+    {"route_no": "10", "from": "MANIKONDA", "driver_name": "Nagaraju", "contact": "7893019636"},
+    {"route_no": "11", "from": "MASJIDBANDA", "driver_name": "Nageswar Rao", "contact": "9515897733"}
+  ],
+
+  "academic_calendar": [
+  { "year": "1", "semester": "1", "event": "Sessional I", "dates": "28 Oct – 1 Nov 2025" },
+  { "year": "1", "semester": "1", "event": "Sessional II", "dates": "29 Dec 2025 – 2 Jan 2026" },
+  { "year": "1", "semester": "1", "event": "End Exams", "dates": "12 Jan – 23 Jan 2026" },
+  { "year": "1", "semester": "2", "event": "Sessional I", "dates": "30 Mar – 4 Apr 2026" },
+  { "year": "1", "semester": "2", "event": "Sessional II", "dates": "1 Jun – 5 Jun 2026" },
+  { "year": "1", "semester": "2", "event": "End Exams", "dates": "15 Jul – 24 Jul 2026" },
+
+  { "year": "2", "semester": "3", "event": "Sessional I", "dates": "15 Sep – 20 Sep 2025" },
+  { "year": "2", "semester": "3", "event": "Sessional II", "dates": "17 Nov – 24 Nov 2025" },
+  { "year": "2", "semester": "3", "event": "End Exams", "dates": "6 Dec 2025 – 23 Dec 2026" },
+  { "year": "2", "semester": "4", "event": "Sessional I", "dates": "2 Mar – 9 Mar 2026" },
+  { "year": "2", "semester": "4", "event": "Sessional II", "dates": "4 May – 11 May 2026" },
+  { "year": "2", "semester": "4", "event": "End Exams", "dates": "22 May – 5 June 2026" },
+
+  { "year": "3", "semester": "5", "event": "Sessional I", "dates": "15 Sep – 20 Sep 2025" },
+  { "year": "3", "semester": "5", "event": "Sessional II", "dates": "17 Nov – 24 Nov 2025" },
+  { "year": "3", "semester": "5", "event": "End Exams", "dates": "6 Dec – 23 Dec 2025" },
+  { "year": "3", "semester": "6", "event": "Sessional I", "dates": "2 Mar – 9 Mar 2026" },
+  { "year": "3", "semester": "6", "event": "Sessional II", "dates": "4 May – 11 May 2026" },
+  { "year": "3", "semester": "6", "event": "End Exams", "dates": "22 May – 5 June 2026" },
+
+  { "year": "4", "semester": "7", "event": "Sessional I", "dates": "15 Sep – 19 Sep 2025" },
+  { "year": "4", "semester": "7", "event": "Sessional II", "dates": "17 Nov – 21 Nov 2025" },
+  { "year": "4", "semester": "7", "event": "End Exams", "dates": "1 Dec – 16 Dec 2025" },
+  { "year": "4", "semester": "8", "event": "Sessional I", "dates": "23 Feb – 26 Feb 2026" },
+  { "year": "4", "semester": "8", "event": "Sessional II", "dates": "27 Apr – 30 Apr 2026" },
+  { "year": "4", "semester": "8", "event": "End Exams", "dates": "6 May – 13 May 2026" }
+]
+}

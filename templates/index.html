@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{ college_name }} — Student Chatbot</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="page">
+    <!-- LEFT: Hero welcome panel -->
+    <aside class="hero-welcome-panel">
+      <div class="hero-left-inner">
+        <!-- Top: Logo -->
+        <div class="hero-brand">
+          <div class="hero-logo">VNR</div>
+          <div class="hero-brand-text">
+            <div class="hero-school">VNR VJIET</div>
+            <div class="hero-role">Student Chatbot</div>
+          </div>
+        </div>
+
+        <!-- Bottom: Main content -->
+        <div class="hero-content">
+          <h1><span class="wave">👋</span> <span class="greet">Hi!</span> <span class="accent">Welcome</span> to</h1>
+          <h2 class="big">VNR VJIET Student Chatbot</h2>
+          <p class="lead">
+            This is a bot where you can get quick answers for bus routes, driver contacts,
+            academic calendars,hod details, facilities, and campus info.
+          </p>
+
+          <p class="hint">Try a question in the chat on the right.</p>
+
+          <!-- Example query chips -->
+          <div class="examples-hero">
+            <button class="chip">driver Patancheru</button>
+            <button class="chip">route 2</button>
+            <button class="chip">college address</button>
+            <button class="chip">hod of cse</button>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- RIGHT: Chat panel -->
+    <main class="chat-panel">
+      <header class="chat-header">
+        <div>
+          <h3>{{ college_name }}</h3>
+          <p class="muted">Ask me anything — try "route 1" or "what are the facilities"</p>
+        </div>
+      </header>
+
+      <div id="chatbox" class="chatbox" role="log" aria-live="polite"></div>
+
+      <form id="chat-form" class="chat-form" autocomplete="off">
+        <input id="message" name="message" placeholder="Type a question — e.g. 'contact number'..." />
+        <button type="submit">Send</button>
+      </form>
+    </main>
+  </div>
+
+  <!-- JS logic -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Fill chat box when example chip clicked
+    document.querySelectorAll('.examples-hero .chip').forEach(btn=>{
+      btn.addEventListener('click', () => {
+        const input = document.getElementById('message');
+        if(!input) return;
+        input.value = btn.textContent.trim();
+        input.focus();
+      });
+    });
+
+    const form = document.getElementById('chat-form');
+    const box = document.getElementById('chatbox');
+    const input = document.getElementById('message');
+
+    function append(sender, text){
+      const el = document.createElement('div');
+      el.className = 'msg ' + (sender === 'You' ? 'you' : 'bot');
+      el.innerHTML = `<div class="who">${sender}</div><div class="text">${text}</div>`;
+      box.appendChild(el);
+      box.scrollTop = box.scrollHeight;
+    }
+
+    // Initial greeting
+    append('VNR Bot', 'Hello! I can help with transport routes, driver contacts, academic info, and facilities. Try: "routes", "driver Patancheru", or "address".');
+
+    // Handle form submit
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const msg = input.value.trim();
+      if(!msg) return;
+      append('You', msg);
+      input.value = '';
+      try {
+        const res = await fetch('/api/chat', {
+          method: 'POST',
+          headers: {'Content-Type':'application/json'},
+          body: JSON.stringify({message: msg})
+        });
+        const data = await res.json();
+        append('VNR Bot', data.answer || data.error || 'No response');
+      } catch (err) {
+        append('VNR Bot', 'Server error: ' + err.message);
+      }
+    });
+  });
+  </script>
+</body>
+</html>
