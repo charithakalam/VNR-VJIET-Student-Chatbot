@@ -21,17 +21,17 @@ It can answer queries like **bus routes**, **driver contacts**, **academic calen
 ## 📁 Project Structure
 student-chatbot/
 │
-├── app.py # Flask application
-├── chatbot.py # Chatbot logic and query handling
-├── requirements.txt # Project dependencies
-├── run.sh # Script to run the app locally
+├── app.py                  # Flask application
+├── chatbot.py              # Chatbot logic and query handling
+├── requirements.txt        # Project dependencies
+├── run.sh                  # Script to run the app locally
 ├── README.md
 │
 ├── data/
-│ └── college_details.json
+│   └── college_details.json
 │
 ├── static/
-│ └── style.css
+│   └── style.css
 │
 ├── templates/
-│ └── index.html
+│   └── index.html
