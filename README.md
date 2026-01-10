@@ -19,6 +19,8 @@ It can answer queries like **bus routes**, **driver contacts**, **academic calen
 - **Tools:** Git, GitHub  
 
 ## 📁 Project Structure
+
+```text
 student-chatbot/
 │
 ├── app.py                  # Flask application
